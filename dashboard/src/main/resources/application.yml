@@ -1,5 +1,5 @@
 server :
-  port : 8081
+  port : 9090
   servlet :
     context-path : /
 spring :
@@ -29,7 +29,7 @@ spring :
   datasource:
     username: ${MYSQL_USER:root}
     password: ${MYSQL_PASS:root}
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/hotkey_db?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&useTimezone=true&serverTimezone=GMT
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/hotkey?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&useTimezone=true&serverTimezone=GMT
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       max-lifetime: 120000

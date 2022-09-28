@@ -18,4 +18,4 @@ etcd:
   server: ${etcdServer:http://127.0.0.1:2379} #etcd的地址，重要！！！
   workerPath: ${workerPath:default} #该worker放到哪个path下，譬如放/app1下，则该worker只能被app1使用，不会为其他client提供服务
 server:
-  port: 8080
+  port: 9080
